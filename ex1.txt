@@ -1,0 +1,17 @@
+
+PHẦN 1 – PHÂN TÍCH LỖI VÀ NGUYÊN NHÂN
+1. Tại sao định dạng thủ công lại gây ra lỗi mục lục?
+- Nguyên nhân: Microsoft Word tạo bảng mục lục tự động (Auto TOC) dựa trên các định dạng cấu trúc sẵn (Heading Styles: Heading 1, Heading 2, Heading 3...), chứ không nhận diện dựa vào cách trình bày trực quan (như phóng to chữ, in đậm hay đổi màu thủ công). 
+- Hậu quả: Khi Nam dùng định dạng thủ công, Word không hiểu đó là tiêu đề mục lục, dẫn đến thông báo lỗi "No table of contents entries found" và Nam không thể cập nhật hay đồng bộ hóa số trang tự động khi tài liệu thay đổi.
+2. Chỉ ra lỗi sai của Nam khiến đoạn văn dài 5 trang hiện lên mục lục:
+- Nguyên nhân: Nam đã quét chọn (bôi đen) toàn bộ hoặc để một đoạn văn bản dài nằm chung trong khối đoạn văn được áp dụng nhãn Heading 1. 
+- Hậu quả: Tính năng Auto TOC mặc định sẽ quét toàn bộ nội dung nào mang định dạng Heading 1 để đưa vào bảng mục lục. Do đó, thay vì chỉ hiển thị tiêu đề ngắn gọn, bảng mục lục đã gom luôn cả đoạn văn bản 5 trang dài dằng dặc vào trong mục lục.
+PHẦN 2 – SỬA LỖI VÀ CHUẨN HÓA TÀI LIỆU SRS
+1. Các bước gán lại nhãn Heading Styles chuẩn cấp bậc:
+- Bước 1: Quét chọn đúng dòng tiêu đề chính (Ví dụ: "1. Giới thiệu dự án"), trên thẻ Home chọn Heading 1.
+- Bước 2: Quét chọn các tiểu mục con (Ví dụ: "1.1. Mục tiêu"), trên thẻ Home chọn Heading 2.
+- Bước 3: Đảm bảo các đoạn văn bản nội dung bên dưới phải được để ở định dạng Normal (không dính nhãn Heading).
+2. Thao tác chèn lại Auto TOC và cập nhật số trang:
+- Bước 1: Đặt con trỏ chuột tại vị trí muốn đặt bảng mục lục (thường ở đầu tài liệu).
+- Bước 2: Vào thẻ References -> Table of Contents -> Chọn kiểu mẫu mục lục tự động (Automatic Table).
+- Bước 3: Sau khi chỉnh sửa nội dung hoặc thêm trang, nhấp chuột phải vào bảng mục lục -> Chọn Update Field -> Chọn "Update entire table" để cập nhật chính xác lại toàn bộ cấu trúc và số trang mới nhất.
